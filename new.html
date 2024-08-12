@@ -63,10 +63,10 @@
         </div>
     </header><br><br><br>
 
-    <div class="container bg-light" style="padding: 5%">
+    <div class="container" id="bg" style="padding: 5%; background: rgba(203, 68, 74, 0.2);">
         <div class="row">
-            <div class="col-sm-5" style="display: flex; align-items: center; flex-direction: column; justify-content: center;">
-                <h3><span class="material-symbols-outlined">help</span> 還在為收據煩惱嗎？</h3>
+            <div class="col-sm-5 text-center" style="padding: 5%">
+                <h3>還在為收據煩惱嗎？</h3>
                 <br>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa enim deserunt asperiores dolorem pariatur mollitia esse placeat laborum delectus!</p>
                 <br>
@@ -83,7 +83,7 @@
 
     <div class="bg-white" style="padding-top: 50px">
         <div class="container">
-            <h3></span> 日房管理の三大無需</h3><br>
+            <h3>日房管理の三大無需</h3><br>
             <div class="row" style="justify-content: space-between;">
                 <div class="col-sm-4">
                     <span class="material-symbols-outlined bg-success text-white" style="padding: 20px; border-radius: 100%; font-size: 100px; margin-bottom: 30px">language_japanese_kana</span>
@@ -198,6 +198,7 @@
     </footer>
 
     <script>
+        const bg = document.getElementById('bg');
         const btn = document.getElementById('btn');
         const text = document.getElementById('text');
         const before = document.getElementById('before');
@@ -206,15 +207,17 @@
             if (before.hidden) {
                 before.hidden = false;
                 after.hidden = true;
-                text.innerHTML = '<span class="material-symbols-outlined">refresh</span> 日房管理'
-                btn.classList.remove('btn-danger')
-                btn.classList.add('btn-success')
+                bg.style.background = 'rgba(203, 68, 74, 0.2)';
+                text.innerHTML = '<span class="material-symbols-outlined">refresh</span> 日房管理';
+                btn.classList.remove('btn-danger');
+                btn.classList.add('btn-success');
             } else if (after.hidden) {
                 before.hidden = true;
                 after.hidden = false;
-                text.innerHTML = '<span class="material-symbols-outlined">refresh</span> 自己管理'
-                btn.classList.remove('btn-success')
-                btn.classList.add('btn-danger')
+                bg.style.background = 'rgba(64, 133, 88, 0.2)';
+                text.innerHTML = '<span class="material-symbols-outlined">refresh</span> 自己管理';
+                btn.classList.remove('btn-success');
+                btn.classList.add('btn-danger');
             }
         });
     </script>
