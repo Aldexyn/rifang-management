@@ -6,12 +6,12 @@
     <link rel=”icon” href=“image/favicon.ico”>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>span { transform: translateY(6px) } .col-sm-4 { text-align: center; padding: 5%}</style>
+    <style>span { transform: translateY(5px) } .col-sm-4 { text-align: center; padding: 5%}</style>
     <title>日房管理</title>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand" style="z-index: 10; position: fixed; width: 100%; background: rgba(255,255,255,0.9); box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.1);">
+    <nav class="navbar navbar-expand" style="z-index: 10; position: fixed; width: 100%; background: linear-gradient(to bottom, white, rgba(255,255,255,0.8)) ; box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.1);">
         <div class="container">
             <div>
                 <a href="#" class="navbar-brand"><img src="image/rf.png" style="height: 40px"></a>
@@ -60,8 +60,8 @@
     <header style="height: 80vh; background-size: cover; background-position: center; background-image: url(image/hero.jpg);">
         <div class="container" style="padding-top: 50vh">
             <h1 style="color: white">還在為收據煩惱嗎？</h1>
-            <h3 style="color: white">日本房租の一站式服務平台</h3>
-            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contact">免費諮詢（無需提供個人信息）</button>
+            <h3 style="color: white">日本房租一站式服務平台</h3>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact">免費諮詢（無需提供個人信息）</button>
         </div>
     </header><br><br><br><br><br>
 
@@ -74,18 +74,22 @@
                 <br>
                 <p>這些都是投資日本不動產時常見的困擾。日房管理能為您解決這些問題，讓您不再為稅務申報而煩心，專心享受投資的樂趣。</p>
                 <br>
-                <button class="btn btn-success" id="btn">
+                <button class="btn btn-success" id="btn" style="box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.1);">
                     <h5 id="text"><span class="material-symbols-outlined">refresh</span> 日房管理</h5>
                 </button>
+                <p style="color: rgba(0,0,0,0.5);">↑ 點擊</p>
             </div>
             <div class="col-sm-7 text-center" id="bg" style="padding: 5%; background: rgba(203, 68, 74, 0.2);">
                 <img src="image/before.png" style="width: 100%" id="before">
                 <img src="image/after.png" style="width: 100%" id="after" hidden>
             </div>
         </div>
+        <div class="text-center" style="margin-top: 50px">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact">免費諮詢（無需提供個人信息）</button>
+        </div>
     </div><br><br><br><br><br>
     
-    <div class="bg-light" style="padding-top: 50px">
+    <div class="bg-light" style="padding: 100px 0">
         <div class="container">
             <h3><span style="border-bottom: 5px solid gold;">日房管理三大無需</span></h3>
             <br>
@@ -96,49 +100,108 @@
                     <p>日房管理團隊有中文母語人士<br>能為您提供全方位中文服務</p>
                 </div>
                 <div class="col-sm-4">
-                    <span class="material-symbols-outlined bg-success text-white" style="padding: 20px; border-radius: 100%; font-size: 100px; margin-bottom: 30px">description</span>
-                    <h3>無需保管收據</h3>
-                    <p>我們將代為向各業者查詢相關紀錄<br>您無需自己保管收據</p>
-                </div>
-                <div class="col-sm-4">
                     <span class="material-symbols-outlined bg-success text-white" style="padding: 20px; border-radius: 100%; font-size: 100px; margin-bottom: 30px">mail</span>
                     <h3>無需繁瑣聯絡</h3>
                     <p>我們將代為向各業者聯絡<br>您無需為各種電郵煩惱</p>
                 </div>
+                <div class="col-sm-4">
+                    <span class="material-symbols-outlined bg-success text-white" style="padding: 20px; border-radius: 100%; font-size: 100px; margin-bottom: 30px">description</span>
+                    <h3>無需保管收據</h3>
+                    <p>我們將代為向各業者查詢相關紀錄<br>您無需自己保管收據</p>
+                </div>
             </div>
+        </div>
+        <div class="text-center" style="margin-top: 50px">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact">免費諮詢（無需提供個人信息）</button>
         </div>
     </div><br><br><br><br><br>
     
     <div class="container">
-        <h3><span style="border-bottom: 5px solid gold;">日房銀行</span></h3><br>
+        <h3><span style="border-bottom: 5px solid gold;">日房管理app</span></h3><br>
         <div class="row">
             <div class="col-sm-8">
-                <h3 class="text-success">日房管理與一般税理事務所不一樣</h3><br>
-                <p>成為日房管理的用戶，您即可透過日房銀行輕鬆管理不動產收入。無論是定期性的管理費、固定資產稅，或是臨時的修繕費、出差費用，都能透過系統自動支付。您可隨時登入查詢交易明細和提取存款，省去與房產管理公司的繁瑣聯繫。</p>
-                <p>我們將持續開發以下創新功能，以滿足客戶多元化的需求。</p>
+                <h3 class="text-success">您有日本的銀行帳戶嗎？</h3>
+                <br>
+                <p>使用日房管理app，就像把您的房租收入放在一個電子錢包裡。不論是固定的房產管理費用，還是臨時的維修支出，都能輕鬆地從這個錢包裡扣款。</p>
                 <div class="card-group">
                     <div class="card">
-                        <div class="card-header"><span class="material-symbols-outlined">bolt</span> 精美裝修</div>
-                        <div class="card-body">日房管理與日本多家專業裝修業者建立合作夥伴關係，可為您安排精美裝修服務。</div>
+                        <div class="card-header bg-danger text-white">
+                            <h5><span class="material-symbols-outlined">cancel</span> 自己管理</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>您每月的房租收入，都會被扣除數千元的海外匯款手續費。而當中被扣除的管理費、稅金等各種費用等亦沒有清晰列明。</p>
+                        </div>
                     </div>
                     <div class="card">
-                        <div class="card-header"><span class="material-symbols-outlined">bolt</span> 出差安排</div>
-                        <div class="card-body">日房管理可代為安排您的日本旅遊行程，並將相關費用納入您的不動產投資成本。</div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header"><span class="material-symbols-outlined">bolt</span> 房地產導遊</div>
-                        <div class="card-body">日房管理將根據您的投資目標，規劃專屬的日本不動產投資考察行程。</div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header"><span class="material-symbols-outlined">bolt</span> 代購</div>
-                        <div class="card-body">日房管理持續關注日本市場最新趨勢，為您提供多元化的商品採購服務。</div>
+                        <div class="card-header bg-success text-white">
+                            <h5><span class="material-symbols-outlined">check_circle</span> 日房管理</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>透過日房管理app，您可以隨時隨地查詢詳細的房地產收支狀況，並發出匯款指示，讓您的財務管理更透明、更方便。</p>
+                        </div>
                     </div>
                 </div>
+                <br>
+                <p style="font-size: 0.9rem; color: rgba(0,0,0,0.5)">※ 使用本服務之前，需要事先簽訂『不動產收入管理受託契約』</p>
+                <p style="font-size: 0.9rem; color: rgba(0,0,0,0.5)">※ 我們會代您管理房租收入，但僅限於支付相關費用，不提供銀行存款等金融服務。</p>
             </div>
             <div class="col-sm-1"><br><br><br></div>
             <div class="col-sm-3">
                 <img src="image/bank.png" style="width: 100%;">
             </div>
+        </div>
+        <div class="text-center" style="margin-top: 50px">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact">免費諮詢（無需提供個人信息）</button>
+        </div>
+    </div><br><br><br><br><br>
+
+    <div class="container">
+        <h3><span style="border-bottom: 5px solid gold;">透明定價</span></h3><br>
+        <div class="text-white text-center" style="box-shadow: 6px 6px 6px 3px rgba(0,0,0,0.1); border-radius: 20px; padding: 15% 0; background-size: cover; background-position: center; background-image: url(image/price.jpg);">
+            <h5><span style="font-size: 80px">66,000</span> 日圓</h5>
+            <p style="font-size: 1.2rem;">每個物業的年度收費（含稅）</p>
+            <p>每多一個業主需加 22,000日圓<br>每多一個物業需加 55,000日圓</p>
+        </div>
+    </div><br><br><br><br><br>
+
+    <div class="bg-light" style="padding: 100px 0">
+        <div class="container">
+            <h3><span style="border-bottom: 5px solid gold;">FAQ</span></h3><br>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            我已經與稅務師簽約了，我該怎麼辦呢？
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">相較於一般稅務事務所，我們提供更優惠的價格和更便捷的服務。在日本，更換稅務師是很常見的。如果您想轉換為我們的服務，歡迎隨時聯繫我們。</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            我想用日房管理服務。我該從什麼開始呢？
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">您只需要聯繫我們，了解完服務內容後，簽署「不動產收入管理委託契約」和「納稅管理人的選任屆」這兩份文件，再通知您的房屋出租管理公司和其他房地產經紀人就可以了。我們會向您現有的稅務師確認報稅所需的信息，您無需自行準備任何資料。</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            日房管理的資金管理方式是怎麼樣的？
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">我們會將您的不動產收入和其他資金分開管理，絕對不會挪用您的存款用於不動產管理以外的用途。這種行為在日本的銀行法中是被嚴格禁止的。您可以隨時聯繫我們並提取您的存款。</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: 50px">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact">免費諮詢（無需提供個人信息）</button>
         </div>
     </div><br><br><br><br><br>
     
@@ -188,32 +251,50 @@
                 <div class="card-body"></div>
             </div>
         </div>
+        <div class="text-center" style="margin-top: 50px">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contact">免費諮詢（無需提供個人信息）</button>
+        </div>
     </div><br><br><br><br><br>
 
     <div class="container">
-        <h3><span style="border-bottom: 5px solid gold;">公司簡介</span></h3><br>
+        <h3><span style="border-bottom: 5px solid gold;">日房管理</span></h3><br>
         <div class="row">
             <div class="col-sm-6">
-                <h3><b>日房管理</b>合同会社</h3>
-                <p>RIFANG MANAGEMENT Ltd.</p>
-                <p>〒162-0805 東京都新宿区矢来町27-2</p>
-                <h5>「讓日本的房地產投資更簡單！」</h5>
-                <p>專門為海外人士提供日本房地產管理服務</p>
-                <br>
-                <div style="display: flex; justify-content: space-evenly">
-                    <div>
-                        <img src="image/wechat-qr.jpg" style="width: 100px">
-                        <p class="text-center">微信</p>
-                    </div>
-                    <div>
-                        <img src="image/whatsapp-qr.png" style="width: 100px">
-                        <p class="text-center">WhatsApp</p>
-                    </div>
-                    <div>
-                        <img src="image/line-qr.png" style="width: 100px">
-                        <p class="text-center">LINE</p>
-                    </div>
-                </div>
+                <table class="table table-bordered text-center">
+                    <tr>
+                        <td class="bg-dark text-white">理想</td>
+                        <td>讓日本的房地產投資更簡單！</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-dark text-white">創立</td>
+                        <td>2024年1月</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-dark text-white">資本</td>
+                        <td>1,000,000 日圓</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-dark text-white">地址</td>
+                        <td>東京都新宿区矢来町27-2</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-dark text-white">聯絡</td>
+                        <td style="display: flex; justify-content: space-evenly">
+                            <div>
+                                <img src="image/wechat-qr.jpg" style="width: 100px">
+                                <p class="text-center">微信</p>
+                            </div>
+                            <div>
+                                <img src="image/whatsapp-qr.png" style="width: 100px">
+                                <p class="text-center">WhatsApp</p>
+                            </div>
+                            <div>
+                                <img src="image/line-qr.png" style="width: 100px">
+                                <p class="text-center">LINE</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="col-sm-6">
                 <img src="image/team.jpg" style="width: 100%">
