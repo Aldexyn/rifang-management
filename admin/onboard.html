@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>.form-floating {margin-bottom: 10px}</style>
+    <title>日房管理</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img src="/image/rf.png" style="height: 40px"></a>
+        </div>
+    </nav><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h5>投資家情報</h5>
+                <div class="form-floating">
+                    <input type="text" name="owner" class="form-control" placeholder="p">
+                    <label for="owner">氏名</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" name="furigana" class="form-control" placeholder="p">
+                    <label for="furigana">フリガナ</label>
+                </div>
+                <div class="form-floating">
+                    <input type="date" name="birth" class="form-control" placeholder="p">
+                    <label for="birth">生年月日</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" name="country" class="form-control" placeholder="p">
+                    <label for="country">国</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" name="address" class="form-control" placeholder="p">
+                    <label for="address">現住所</label>
+                </div>
+                <div class="form-floating">
+                    <input type="email" name="email" class="form-control" placeholder="p">
+                    <label for="email">メールアドレス</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" name="occupation" class="form-control" placeholder="p">
+                    <label for="occupation">職業</label>
+                </div>
+                <br>
+                <h5>賃借人情報</h5>
+                <div class="form-floating">
+                    <input type="text" name="occupation" class="form-control" placeholder="p">
+                    <label for="occupation">氏名</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" name="occupation" class="form-control" placeholder="p">
+                    <label for="occupation">フリガナ</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" name="occupation" class="form-control" placeholder="p">
+                    <label for="occupation">住所</label>
+                </div>
+                <br>
+            </div>
+            <div class="col-sm-6">
+                <h5>物件情報</h5>
+                <div class="form-floating">
+                    <select class="form-select" name="prefecture">
+                        <option></option>
+                    </select>
+                    <label for="prefecture">都道府県</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" name="city" class="form-control" placeholder="p">
+                    <label for="city">市区</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" name="rest" class="form-control" placeholder="p">
+                    <label for="rest">以下住所</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" name="property" class="form-control" placeholder="p">
+                    <label for="property">物件名・号室</label>
+                </div>
+                <div class="form-floating">
+                    <input type="date" name="property" class="form-control" placeholder="p">
+                    <label for="property">取得年月</label>
+                </div>
+                <div class="form-floating">
+                    <select class="form-select" name="prefecture">
+                        <option></option>
+                        <option>RC造</option>
+                        <option>木造</option>
+                        <option>鉄筋造</option>
+                        <option>鉄筋鉄骨造</option>
+                    </select>
+                    <label for="prefecture">構造</label>
+                </div>
+                <div class="form-floating">
+                    <input type="number" name="area" class="form-control" placeholder="p">
+                    <label for="area">竣工年</label>
+                </div>
+                <div class="form-floating">
+                    <input type="number" name="area" class="form-control" placeholder="p">
+                    <label for="area">貸付面積(m2)</label>
+                </div>
+                <br>
+                <h5>減価償却費</h5>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
