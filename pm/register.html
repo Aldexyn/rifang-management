@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=”icon” href=“image/favicon.ico”>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>a {text-decoration: none;} .form-floating {margin-bottom: 15px}</style>
+    <title>日房管理</title>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand bg-white" style="box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.1);">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="/image/rf.png" style="height: 40px"></a>
+            <a href="https://lin.ee/CAoLUzb" target="_blank">
+                <img src="/image/line.png" style="width: 35px; margin-left: 5px">
+            </a>
+        </div>
+    </nav><br>
+
+    <div class="container">
+        <h3>パークハウス目黒111</h3><br>
+        <div class="row">
+            <div class="col-6">
+                <div class="form-floating">
+                    <input type="date" name="date" class="form-control" placeholder="p">
+                    <label for="date">日付</label>
+                </div>
+                <div class="form-floating">
+                    <select class="form-select" name="item">
+                        <option></option>
+                        <option>修繕費</option>
+                        <option>修繕費</option>
+                        <option>修繕費</option>
+                        <option>修繕費</option>
+                        <option>修繕費</option>
+                    </select>
+                    <label for="item">項目</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" name="detail" class="form-control" placeholder="p">
+                    <label for="detail">概要</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" name="vendor" class="form-control" placeholder="p">
+                    <label for="vendor">取引先</label>
+                </div>
+                <div class="form-floating">
+                    <input type="number" name="price" class="form-control" placeholder="p">
+                    <label for="price">金額</label>
+                </div>
+                <div class="mb-3">
+                    <label for="receipt" class="form-label">領収書をアップロード</label>
+                    <input class="form-control" type="file" id="receipt">
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-success">送信</button>
+        <a href="expenditure.html" class="btn btn-secondary">戻る</a>
+    </div><br><br><br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
